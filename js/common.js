@@ -120,6 +120,9 @@ $(window).on('scroll', function(){
         $('#nav').removeClass('on')
     } else if ( sct<1 && $('#header').hasClass('on') ) {
         $('#header').removeClass('on')
+        if($('html').hasClass('pc')) {
+            $('#nav .depth1 > li .depth2').css({ 'background': 'rgba(255,255,255,1)' })
+        }
     }
 })
 
