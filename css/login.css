@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+
+/* slide */
+.slide_notice .slide_group .slide1 {
+    background: url(../img/main_metapo01.jpg) no-repeat center;
+    background-size: cover; height: 65vh; position: relative;
+}
+.slide_notice .slide_group .slide2 {
+    background: url(../img/main_metapo02.jpg) no-repeat center;
+    background-size: cover; height: 65vh; position: relative;
+}
+.slide_notice .slide_group .slide3 {
+    background: url(../img/main_metapo03.jpg) no-repeat center;
+    background-size: cover; height: 65vh; position: relative;
+}
+.slide_notice .slide_group .txtbox {
+    position: absolute; 
+    left: 20%; right: 20%; bottom: 20%; 
+    text-align: center;
+    font-weight: 500; color: #fff;
+}
+.slide_notice .slide_group .txtbox h2 { 
+    font-size: 48px; margin-bottom: 30px; 
+}
+.slide_notice .slide_group .txtbox p { font-size: 30px; }
+.slide_notice .slide.slick-active .txtbox h2 {
+    animation: fadeInDown 1s both 0.6s;
+}
+.slide_notice .slide.slick-active .txtbox p {
+    animation: fadeInUp 1s both 1.2s;
+}
+.slide_notice .slide.slick-cloned .txtbox { display: none; }
+/* slick-slide */
+.slide_notice .slide_group { position: relative; }
+.slide_notice .slide_group .slick-arrow {
+    position: absolute; top:50%;
+    transform: translateY(-50%);
+    font-size: 50px; color: #fff;
+    background: none; border: none;
+}
+.slide_notice .slide_group .next{ 
+    right: 0px; width: 200px; height: 100%;
+    outline: none; cursor: pointer;
+}
+.slide_notice .slide_group .prev{ 
+    left: 0; z-index: 99; width: 200px; height: 100%;
+    outline: none; cursor: pointer;
+}
+.slide_notice .slide_group .slick-arrow i {
+    width:80px; height:80px; border-radius: 40px;
+    background-color: rgba(35,35,35,0.5);
+    line-height: 80px; opacity: 0;
+    transition: all 0.3s;
+}
+.slide_notice .slide_group .slick-arrow.on i { opacity: 1; }
+.slide_notice .slide_group .slick-dots{
+    position: absolute; bottom: 10px; left:50%; transform: translateX(-50%);
+}
+.slide_notice .slide_group .slick-dots li {
+    display: inline-block; margin: 0 3px;
+    width:30px; height: 4px; background: rgba(255, 255, 255, 0.7);
+    position: relative;
+}
+.slide_notice .slide_group .slick-dots li button {
+    position: absolute; top:50%; left:0; transform: translateY(-50%);
+    width: 0px; height: 4px;
+    background:#f44336; border: none;
+    text-indent: -9999px; overflow: hidden; outline: none;
+}
+.slide_notice .slide_group .slick-dots li.slick-active button {
+    animation: barani 5s both linear;
+} 
+@keyframes barani {
+    form { width:0px; }
+    to { width: 30px; }
+}
+
+
+/* join-login nav */
+.jlnav .jlnav_wrap { margin: 15px 0; padding: 10px 0; text-align: center;}
+.jlnav .jlnav_wrap .nav { margin:0 auto; }
+.jlnav .jlnav_wrap .nav li { display: inline-block; }
+.jlnav .jlnav_wrap .nav li a {
+    display: block; padding: 8px 40px;
+    font-size: 16px; line-height: 1.6;
+}
+.jlnav .jlnav_wrap .nav li a {
+    color: #000; background-color: #e8e8e8; transition: all 0.4s;
+}
+.jlnav .jlnav_wrap .nav li.on a {
+    color: #fff; background-color: #000;
+}
+.jlnav .jlnav_wrap .nav li.active a {
+    color: #fff; background-color: #946f57;
+}
+
+
+/* location */
+.location .loca_wrap {
+    padding: 15px; background-color: #000;
+    color: #b8b8b8; font-size: 14px;
+    text-align: right;
+}
+.location .loca_wrap li { display: inline-block; }
+
+
+
+
+.loginPage { padding-top: 60px; padding-bottom: 60px; }
+.loginBox .title {
+    padding: 40px 0; color: #494949; 
+    border-bottom: 1px solid rgba(236,236,236,1);
+}
+.loginBox .title h2 {
+    display: inline-block; font-size: 32px;
+}
+.loginBox .title p {
+    display: inline-block; font-size: 12px;
+}
+.loginBox .outer { padding: 65px 0; }
+.loginBox .inner {
+    width:50%; margin:0 auto;
+    color:#555;
+}
+.loginBox .inner input { 
+    width:100%; padding:5px 10px; height: 32px;
+    border: 1px solid #ccc; border-radius: 3px;
+}
+.loginBox .inner input::placeholder {
+    font-weight: bold;
+}
+.loginBox .inner p { padding:5px 0; }
+.loginBox .inner p:nth-of-type(1) { line-height: 1.6; font-weight: 700; }
+.loginBox .inner p label {
+    position: absolute;
+    width:1px; height:1px; overflow: hidden;
+}
+.loginBox .inner button {
+    background-color: #dc3545; color:#fff; width:100%;
+     border-radius: 2px; border:none;
+    font-size: 12.5px; padding: 3.5px 7px;
+    transition: all 0.3s; cursor: pointer;
+}
+.loginBox .inner button strong {font-weight: 700; line-height: 1.5; }
+.loginBox .inner button.on { background-color: #c82333; }
+.loginBox .inner ul {
+    text-align: center; padding: 20px 0;
+}
+.loginBox .inner ul li {
+    display: inline-block; margin: 0 10px;
+}
+.loginBox .inner ul li a {
+    display: block;
+    font-size: 14px;
+    color: #6e6e6e;
+}
