@@ -35,7 +35,8 @@ function dataPrint(){
     $('.section8 .pf_contents').append(list)
     // setTimeout(masonry, 500)
     $('.section8 .pf_contents').imagesLoaded(function(){
-        masonry();
+        // masonry();
+        setTimeout(masonry, 500)
     })
 
     $('.pfbox .imgbox').hover(
