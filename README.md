@@ -1,3 +1,3 @@
 # portfolio_2-copywebdesign-
 
-https://bullkhan.github.io/portfolio2_AM/.
+https://bullkhan.github.io/PortFolio_2/
