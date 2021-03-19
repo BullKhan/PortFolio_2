@@ -18,21 +18,24 @@ function calc_width(){
     wh = $(window).height();
     if ( ww > deviceSize && !$('html').hasClass('pc') ) {
         $('html').addClass('pc').removeClass('mobile')
+        // $('#header #nav').addClass('on')
         $('#header #nav').css({'display':'block'})
         $('#header .opcl').removeClass('on open')
+        // $('.depth1 > li').removeClass('on')
         $('html').scrollTop(0)
+        // $('#nav').find('.depth2').slideUp(1)
         $('#nav').find('.depth2').css({display:'none'})
         $('#header > div').addClass('row')
-        $('.depth1 > li').siblings().find('a > span:first-child').addClass('on')
-        $('.depth1 > li').siblings().find('a > span:last-child').removeClass('on')
     } else if ( ww <= deviceSize && !$('html').hasClass('mobile') ){
         $('html').addClass('mobile').removeClass('pc')
         $('#nav').slideUp(1)
+        // $('#header #nav').removeClass('on')
         $('#header #nav').css({'display':'none'})
         $('#header .opcl').addClass('on')
         $('html').scrollTop(0)
         $('#header > div').removeClass('row')
-        $('#nav').find('.depth2').css({display:'none', paddingBottom:0, height:'auto'})
+        $('#nav').find('.depth2').css({display:'none'})
+        $('#nav').find('.depth2').css({ paddingBottom:0 })
     }
 }
 calc_width();
@@ -118,12 +121,28 @@ $(window).on('scroll', function(){
     if ( sct>=1 && !$('#header').hasClass('on') ) {
         $('#header').addClass('on')
         $('#nav').removeClass('on')
+        $('.gotop').addClass('on')
     } else if ( sct<1 && $('#header').hasClass('on') ) {
         $('#header').removeClass('on')
-        if($('html').hasClass('pc')) {
-            $('#nav .depth1 > li .depth2').css({ 'background': 'rgba(255,255,255,1)' })
-        }
+        $('.gotop').removeClass('on')
     }
 })
 
+// $('#nav .depth2lt .qna a').on('click',function(){
+//     $('#contentBox #boxContent').remove()
+//     $('#contentBox').load('qna.html #boxContent')
+//     $('.jlnav_wrap .nav li').eq(1).addClass('active').siblings().removeClass('active')
+// })
 
+
+$('.gotop').on('click', function(e){
+    e.preventDefault();
+    var sct = $(window).scrollTop();
+    if ( sct===0 ) {
+        return false
+    } else {
+        $('html').animate({
+            scrollTop:0
+        }, 500)
+    }
+})

@@ -146,3 +146,17 @@ body { font-family: 'Noto Sans KR', sans-serif; }
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+.gotop {
+    position: fixed;
+    bottom: 5%; right: 5%;
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+    width: 42px; height: 42px;
+    text-align: center; line-height: 42px;
+    font-size: 12px;
+    opacity: 0; transition: all 0.4s;
+}
+.gotop.on { opacity: 1; }
+.gotop a { display: block; }
+.gotop a:hover {background: orange;}

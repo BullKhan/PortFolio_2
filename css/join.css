@@ -144,9 +144,9 @@ legend { display: none; }
     border: 1px solid #ddd; padding:10px; text-align: left; vertical-align: middle;
 }
 .joinBox td label { margin-right: 10px; }
-
 .joinBox input[type='text'],
 .joinBox input[type='password'],
+.joinBox input[type='checkbox'],
 .joinBox textarea,
 .joinBox select {
     height: 25px; border: 1px solid #ddd; text-indent: 1em; vertical-align: middle;
@@ -165,8 +165,12 @@ legend { display: none; }
 .joinBox #birth { width: 100px; }
 .joinBox #addr1,
 .joinBox #addr2,
-.joinBox #addr3 { width:35% }
-.joinBox #zipcode + button { height: 30px; vertical-align: middle; }
+.joinBox #addr3 { width:35%; margin-right: 5px; }
+.joinBox #addr2 { margin-left: 30px; }
+.joinBox #zipcode + button { 
+    height: 25px; vertical-align: middle; padding: 0 10px; color: #fff;
+    font-weight: bold; background: #494949; border: 1px solid #494949;
+}
 .joinBox .agree span,
 .joinBox .agree input,
 .joinBox .agree label { vertical-align: middle; }

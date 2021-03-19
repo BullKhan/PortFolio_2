@@ -1,0 +1,153 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+
+
+/* slide */
+.slide_notice .slide_group .slide1 {
+    background: url(../img/banner01.jpg) no-repeat center;
+    background-size: cover; height: 260px; position: relative;
+}
+.slide_notice .slide_group .slide1::before {
+    content:''; background-color: rgba(0,0,0,0.5);
+    position: absolute; top:0; bottom:0; left:0; right:0;
+}
+.slide_notice .slide_group .txtbox {
+    position: absolute; 
+    left: 0; right: 0; top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.slide_notice .slide_group .txtbox h2 { 
+    font-size: 48px; margin-bottom: 60px; font-weight: 800;
+    position: relative;
+}
+.slide_notice .slide_group .txtbox h2::before { 
+    content:''; width:50px; height:3px; background-color: #fff;
+    position: absolute; bottom:-30px; left:50%; transform: translate(-50%);
+}
+.slide_notice .slide_group .txtbox p { font-size: 18px; font-weight: 100; }
+
+
+/* join-login nav */
+.jlnav .jlnav_wrap { margin: 15px 0; padding: 10px 0; text-align: center;}
+.jlnav .jlnav_wrap .nav { margin:0 auto; }
+.jlnav .jlnav_wrap .nav li { display: inline-block; }
+.jlnav .jlnav_wrap .nav li a {
+    display: block; padding: 8px 40px;
+    font-size: 16px; line-height: 1.6;
+}
+.jlnav .jlnav_wrap .nav li a {
+    color: #000; background-color: #e8e8e8; transition: all 0.4s;
+}
+.jlnav .jlnav_wrap .nav li.on a {
+    color: #fff; background-color: #000;
+}
+.jlnav .jlnav_wrap .nav li.active a {
+    color: #fff; background-color: #946f57;
+}
+
+
+/* location */
+.location .loca_wrap {
+    padding: 15px; background-color: #000;
+    color: #b8b8b8; font-size: 14px;
+    text-align: right;
+}
+.location .loca_wrap li { display: inline-block; }
+
+
+
+
+.processPage { padding-top: 60px; padding-bottom: 60px; }
+.processBox .title {
+    padding: 40px 0; color: #494949; 
+    border-bottom: 1px solid rgba(236,236,236,1);
+    margin-bottom: 20px;
+}
+.processBox .title h2 {
+    display: inline-block; font-size: 32px;
+}
+.processBox .title p {
+    display: inline-block; font-size: 12px;
+}
+
+.processBox .page_wrap{ padding: 30px 0; }
+.processBox .page_wrap .imgbox {
+    background: url(../img/banner01.jpg) no-repeat center;
+    background-size: cover;
+    padding: 55px 0; position: relative;
+}
+.processBox .page_wrap .imgbox::before{
+    content:''; top:0; bottom:0; right:0; left:0;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+}
+.processBox .page_wrap .imgbox .imgtxt{
+    font-size: 20px; line-height: 35px;
+    word-break: keep-all; color: rgba(248,249,250,0.7);
+    width:79%; margin: 0 auto; position: relative;
+}
+.processBox .page_wrap .processInfo { padding-top:55px; }
+.processBox .page_wrap .processInfo .infoTitle {
+    margin:15px 0; padding:15px; color:#555; line-height: 1.6;
+}
+.processBox .page_wrap .processInfo .infoTitle p:first-child {
+    font-size: 48px; 
+}
+.processBox .page_wrap .processInfo .infoTitle p:last-child {
+    font-size: 18px;
+}
+.processBox .page_wrap .processInfo .infoTitle h3 {
+    font-size: 77px; margin-bottom: 14px; font-weight: 600;
+}
+
+.processBox .page_wrap .processInfo .infotxt {
+    color: #676767; word-break: keep-all; height: 100%;
+}
+.processBox .page_wrap .processInfo .infotxt ul {
+    margin: 80px 0;
+}
+.processBox .page_wrap .processInfo .infotxt li {
+    float:left; width:25%; padding: 30px 10px;
+    position: relative; height: 100%;
+}
+.processBox .page_wrap .processInfo .infotxt li::before {
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid #afafaf;
+    border-right: 0 solid transparent;
+    border-top: 3px solid transparent;
+    content: '';
+    height: 100%;
+    position: absolute;
+    left: 0; top: 0;
+    transition: border-left 0.4s;
+}
+.processBox .page_wrap .processInfo .infotxt li.on::before {
+    border-left: 3px solid #a4111f;
+}
+.processBox .page_wrap .processInfo .infotxt .twrap {
+    width:90%; margin:0 auto; height: 100%;
+    padding-left: 20px;
+}
+.processBox .page_wrap .processInfo .infotxt p {
+    font-size: 40px; font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+}
+.processBox .page_wrap .processInfo .infotxt p::before {
+    content:'STEP'; position: absolute;
+    top:15px; left:-25px; 
+    font-weight: 300; font-size: 14px;
+    display: inline-block;
+    letter-spacing: 2px;
+    transform: rotate(90deg);
+    /* transform-origin: 15% 57%; */
+}
+.processBox .page_wrap .processInfo .infotxt h4 {
+    font-size: 20px; margin: 10px 0; line-height: 35px;
+}
+.processBox .page_wrap .processInfo .infotxt .twrap > div {
+    font-size: 14px; line-height:25px;
+}

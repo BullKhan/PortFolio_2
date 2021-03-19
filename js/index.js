@@ -59,7 +59,6 @@ $(".section4 .slide_group_b").slick({
     }]
 })
 
-
 // 게시판 무빙
 var updown = setInterval(lifting, 3000)
 function lifting() {

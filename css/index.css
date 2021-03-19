@@ -295,7 +295,7 @@
 }
 #section .section5 li:nth-child(2).on {
     animation: fadeInUp 0.8s both 0.3s;
-}
+} 
 #section .section5 li:nth-child(3).on {
     animation: fadeInUp 0.8s both;
 }
@@ -435,7 +435,7 @@
 
 #section .section8 .pf_contents img { width: 100%; height: auto; }
 #section .section8 .pf_contents a { display: block; }
-#section .section8 .pf_contents .pfbox { width: 25%; padding: 0 10px; display: block; }
+#section .section8 .pf_contents .grid-item { width: 25%; padding: 0 10px; }
 #section .section8 .pf_contents .pfbox .imgbox { 
     position: relative; margin: 5px 0; padding: 2px;
 }
@@ -454,62 +454,7 @@
 #section .section8 .pf_contents .pfbox .abox.on a {
     color: #fff; background: #de4555;
 }
-#section .section8 .pushbtn {
-    text-align: center; margin-bottom: 30px;
-    display: none;
-}
-#section .section8 .pushbtn button {
-    padding: 10px 20px; border:none;
-    background-color: rgba(0,0,0,0.7);
-    color:#ffa107; font-size: 12px;
-    font-weight: 600; border-radius: 5px;
-    cursor: pointer; transition: all 0.4s;
-}
-#section .section8 .pushbtn button:hover {
-    background-color: #000; color:#ffcf00;
-}
-#section .section8 .formBox {
-    position: fixed; height: 100vh; right:0; left:0;
-    background-color: rgba(0,0,0,0.5);
-    top:50%; transform: translateY(-50%);
-    z-index: 999999; display: none;
-    display: none;
-}
-#section .section8 .formBox form {
-    width: 500px; margin:0 auto;
-    background-color: #fff;
-    position: relative; top:50%;
-    transform: translateY(-50%);
-    padding:30px;
-}
-#section .section8 .formBox form p { 
-    margin: 10px 0; vertical-align: middle;
-    border: 2px solid rgba(0,0,0,0.3);
-    height:26px;
-}
-#section .section8 .formBox form label { 
-    display: inline-block; line-height:20px;
-    width:25%; text-align: center; vertical-align: middle;
-    font-size: 14px;
-}
-#section .section8 .formBox form input {
-    display: inline-block; line-height:20px;
-    width:74%; vertical-align: middle;
-    border:none; background-color: #eee;
-    text-indent: 10px;
-}
-#section .section8 .formBox form button {
-    padding: 10px 20px; border:none;
-    color:#fff;
-}
-#section .section8 .formBox form > div { text-align:center; 
-}
-#section .section8 .formBox form button[type=submit] {
-    background-color: rgba(0,0,255,0.7);
-}
-#section .section8 .formBox form button[type=reset] {
-    background-color: rgba(255,0,0,0.7);
-}
+
 
 /* section 9 - sitemap */
 #section .section9 { 
@@ -536,3 +481,5 @@
 
 /* section 10 - map */
 #section .section10 .map{ filter:grayscale(100%); margin-bottom: -1px; } 
+
+

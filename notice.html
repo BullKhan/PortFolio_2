@@ -49,9 +49,9 @@
                                     <span>회사소개</span>
                                 </a>
                                 <ul class="depth2">
-                                    <li><a href="#none">인사말</a></li>
-                                    <li><a href="#none">회사연혁</a></li>
-                                    <li><a href="#none">오시는길</a></li>
+                                    <li><a href="#none">인사말(작업중)</a></li>
+                                    <li><a href="#none">회사연혁(작업중)</a></li>
+                                    <li><a href="#none">오시는길(작업중)</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -60,11 +60,11 @@
                                     <span>사업소개</span>
                                 </a>
                                 <ul class="depth2">
-                                    <li><a href="#none">인테리어</a></li>
-                                    <li><a href="#none">리모델링</a></li>
-                                    <li><a href="#none">건축시공</a></li>
-                                    <li><a href="#none">전시공간</a></li>
-                                    <li><a href="#none">기타공간</a></li>
+                                    <li><a href="#none">인테리어(작업중)</a></li>
+                                    <li><a href="#none">리모델링(작업중)</a></li>
+                                    <li><a href="#none">건축시공(작업중)</a></li>
+                                    <li><a href="#none">전시공간(작업중)</a></li>
+                                    <li><a href="#none">기타공간(작업중)</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -73,12 +73,12 @@
                                     <span>포트폴리오</span>
                                 </a>
                                 <ul class="depth2">
-                                    <li><a href="#none">전체보기</a></li>
-                                    <li><a href="#none">상업시설</a></li>
-                                    <li><a href="#none">주거시설</a></li>
-                                    <li><a href="#none">교육시설</a></li>
-                                    <li><a href="#none">전시공간</a></li>
-                                    <li><a href="#none">기타시설</a></li>
+                                    <li><a href="#none">전체보기(작업중)</a></li>
+                                    <li><a href="#none">상업시설(작업중)</a></li>
+                                    <li><a href="#none">주거시설(작업중)</a></li>
+                                    <li><a href="#none">교육시설(작업중)</a></li>
+                                    <li><a href="#none">전시공간(작업중)</a></li>
+                                    <li><a href="#none">기타시설(작업중)</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -87,23 +87,23 @@
                                     <span>시공순서</span>
                                 </a>
                                 <ul class="depth2">
-                                    <li><a href="#none">시공순서</a></li>
+                                    <li><a href="process.html">시공순서</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#none"><span class="on">REQUEST</span><span>견적문의</span></a>
                                 <ul class="depth2">
-                                    <li><a href="#none">견적문의</a></li>
-                                    <li><a href="#none">수주현황</a></li>
+                                    <li><a href="#none">견적문의(작업중)</a></li>
+                                    <li><a href="#none">수주현황(작업중)</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#none"><span class="on">CUSTOMER</span><span>고객센터</span></a>
-                                <ul class="depth2">
+                                <ul class="depth2 depth2lt">
                                     <li><a href="notice.html">공지사항</a></li>
-                                    <li><a href="#none">질문과답변</a></li>
-                                    <li><a href="#none">잦은질문</a></li>
-                                    <li><a href="#none">자료실</a></li>
+                                    <li class="qna"><a href="notice.html">질문과답변</a></li>
+                                    <li class="frequentqna"><a href="notice.html">잦은질문</a></li>
+                                    <li class="reference"><a href="notice.html">자료실</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -128,132 +128,157 @@
                         <a href="notice.html">공지사항</a>
                     </li>
                     <li>
-                        <a href="#none">질문과답변</a>
+                        <a href="qna.html">질문과답변</a>
                     </li>
                     <li>
-                        <a href="#none">잦은질문</a>
+                        <a href="frequentqna.html">잦은질문</a>
                     </li>
                     <li>
-                        <a href="#none">자료실</a>
+                        <a href="reference.html">자료실</a>
                     </li>
                 </ul>
             </div>
         </section>
-        <section id="section" class="location">
-            <div class="loca_wrap">
-                <ul class="loca row">
-                    <li>
-                        <i class="fas fa-home"></i> Home
-                    </li>
-                    <li>
-                        <i class="fas fa-angle-right"></i> Customer
-                    </li>
-                    <li>
-                        <i class="fas fa-angle-right"></i> 공지사항
-                    </li>
-                </ul>
+        <div id="contentBox">
+            <div id="boxContent">
+                <section id="section" class="location">
+                    <div class="loca_wrap">
+                        <ul class="loca row">
+                            <li>
+                                <i class="fas fa-home"></i> Home
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i> Customer
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i> 공지사항
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="section" class="noticePage">
+                    <div class="noticeBox row">
+                        <div class="title">
+                            <h2>공지사항</h2>
+                            <p>NOTICE</p>
+                        </div>
+                        <div class="search">
+                            <select name="searchlist" id="searchlist">
+                                <option value="subject">제목</option>
+                                <option value="content">내용</option>
+                                <option value="writer">작성자</option>
+                            </select>
+                            <input type="text" name="searchkeyw" id="searchkeyw">
+                            <button type="button">검색</button>
+                        </div>
+                        <table>
+                            <caption class="blind">공지사항 게시판</caption>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>제목</th>
+                                    <th>작성자</th>
+                                    <th>게시일</th>
+                                    <th>조회수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10</td>
+                                    <td><a href="#">궁금증에 대 한 질문은 핫라인을 이용 하세요</a></td>
+                                    <td>관리자</td>
+                                    <td>2020-05-31</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td><a href="#">PC 디자인과 모바일 디자인이 모두포함 된 상품입니다</a></td>
+                                    <td>관리자</td>
+                                    <td>2020-05-31</td>
+                                    <td>5
+                                <tr>
+                                    <td>8</td>
+                                    <td><a href="#">구매하신 고객님께는 간단메뉴얼이 제공됩니다</a></td>
+                                    <td>관리자</td>
+                                    <td>2020-05-31</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td><a href="#">홈페이지 기능 요약은 홈페이지에서 참고 하세요</a></td>
+                                    <td>관리자</td>
+                                    <td>2020-05-31</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td><a href="#">빠른 상담하기 폼메일 무료팝업제공 [프리미엄버전]</a></td>
+                                    <td>관리자</td>
+                                    <td>2020-05-31</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><a href="#">원 페이지 제작용 빠른 메뉴 무료제공 [프리미엄버전]</a></td>
+                                    <td>관리자</td>
+                                    <td>2020-05-31</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><a href="#">반응형 홈페이지 전용 팝업 N 종 류 무료지원 [프리미엄버전]</a></td>
+                                    <td>관리자</td>
+                                    <td>2020-05-31</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><a href="#">수십종의 고급 위젯 무료 다운로드 [프리미엄버전]</a></td>
+                                    <td>관리자</td>
+                                    <td>2020-05-31</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><a href="#">퀵메뉴 무료 세팅지원 [프리미엄버전]</a></td>
+                                    <td>관리자</td>
+                                    <td>2020-05-31</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><a href="#">업종별 맞춤형 홈페이지 개발 게시판 무료 내장 [프리미엄버전]</a></td>
+                                    <td>관리자</td>
+                                    <td>2020-05-31</td>
+                                    <td>5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="num-list">
+                            <span><i class="fas fa-angle-double-left"></i></span>
+                            <a href="#" class="act">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                            <a href="#">9</a>
+                            <a href="#">10</a>
+                            <span><i class="fas fa-angle-double-right"></i></span>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
-        <section id="section" class="noticePage">
-            <div class="noticeBox row">
-                <div class="title">
-                    <h2>공지사항</h2>
-                    <p>NOTICE</p>
-                </div>
-                <div class="search">
-                    <select name="searchlist" id="searchlist">
-                        <option value="subject">제목</option>
-                        <option value="content">내용</option>
-                        <option value="writer">작성자</option>
-                    </select>
-                    <input type="text" name="searchkeyw" id="searchkeyw">
-                    <button type="button">검색</button>
-                </div>
-                <table>
-                    <caption class="blind">공지사항 게시판</caption>
-                    <colgroup>
-                        <col>
-                        <col>
-                        <col>
-                        <col>
-                        <col>
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th>번호</th>
-                            <th>제목</th>
-                            <th>작성자</th>
-                            <th>게시일</th>
-                            <th>조회수</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>10</td>
-                            <td><a href="#">아이디어와 최신 IT기술의 조화 고객님께서 프로젝트 의뢰 외에 궁금하신 점이나 요청사항, 사업제휴 등 다양한 사항에 대하여 기탄없이 남겨주시면 문의 내용을 검토하여 빠른 시간 안에 전화, 이메일, 방문상담 드리도록 하겠습니다.</a></td>
-                            <td>관리자</td>
-                            <td>2020-05-31</td>
-                            <td>5</td>
-                        </tr>
-                        <td>8</td>
-                            <td><a href="#">아이디어와 최신 IT기술의 조화</a></td>
-                            <td>관리자</td>
-                            <td>2020-05-31</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td><a href="#">아이디어와 최신 IT기술의 조화</a></td>
-                            <td>관리자</td>
-                            <td>2020-05-31</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td><a href="#">아이디어와 최신 IT기술의 조화</a></td>
-                            <td>관리자</td>
-                            <td>2020-05-31</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td><a href="#">아이디어와 최신 IT기술의 조화</a></td>
-                            <td>관리자</td>
-                            <td>2020-05-31</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td><a href="#">아이디어와 최신 IT기술의 조화</a></td>
-                            <td>관리자</td>
-                            <td>2020-05-31</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td><a href="#">아이디어와 최신 IT기술의 조화</a></td>
-                            <td>관리자</td>
-                            <td>2020-05-31</td>
-                            <td>5</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="num-list">
-                    <span><i class="fas fa-angle-double-left"></i></span>
-                    <a href="#" class="act">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">6</a>
-                    <a href="#">7</a>
-                    <a href="#">8</a>
-                    <a href="#">9</a>
-                    <a href="#">10</a>
-                    <span><i class="fas fa-angle-double-right"></i></span>
-                </div>
-            </div>
-        </section>
+        </div>
         <footer id="footer">
             <div class="footerwrap">
                 <div class="row cf">
@@ -357,6 +382,13 @@
             </li>
         </ul>
     </nav>
+    <div class="gotop">
+        <a href="#"><img src="./img/btn_top.png" alt="맨위로"></a>
+    </div>
+
+    <div class="gotop">
+        <a href="#"><img src="./img/btn_top.png" alt="맨위로"></a>
+    </div>
 
     <script src="./js/common.js"></script>
     <script src="./js/notice.js"></script>

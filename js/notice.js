@@ -11,8 +11,11 @@ $('.jlnav .jlnav_wrap .nav li').hover(
         }
     }
 )
-
-
-
-
+$('.jlnav_wrap .nav a').on('click',function(e){
+    e.preventDefault()
+    var url = this.href
+    $(this).parent().addClass('active').siblings().removeClass('active on')
+    $('#boxContent').remove()
+    $('#contentBox').load(url+' #boxContent')
+})
 
