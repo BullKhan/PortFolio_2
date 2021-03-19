@@ -58,6 +58,21 @@ $(".section4 .slide_group_b").slick({
         }
     }]
 })
+// pf - grid
+function mason() {
+    $('.grid').masonry({
+        // options...
+        columnWidth: '.grid-item',
+        percentPosition: true,
+    });
+}
+mason()
+setInterval(mason(),10000)
+// $('.grid').masonry({
+//     // options...
+//     columnWidth: '.grid-item',
+//     percentPosition: true,
+// });
 
 // 게시판 무빙
 var updown = setInterval(lifting, 3000)
@@ -77,6 +92,27 @@ $('.notice table').on('mouseover', 'tbody',function(){
 $('.notice table').on('mouseout', 'tbody',function(){
     updown = setInterval(lifting, 3000)
 })
+
+// 갤러리 호버
+$('.pfbox .imgbox').hover(
+    function(){
+        $(this).addClass('on')
+        $(this).next().addClass('on')
+    },
+    function(){
+        $(this).removeClass('on')
+        $(this).next().removeClass('on')
+    }
+)
+$('.pfbox .abox').hover(
+    function(){
+        $(this).addClass('on')
+    },
+    function(){
+        $(this).removeClass('on')
+    }
+)
+
 
 var wh;
 $(window).on('scroll', function(){

@@ -1,7 +1,7 @@
 var pfList = ''
 $.ajax({
     type:'GET',
-    url:'../js/pf.json',
+    url:'./js/pf.json',
     dataType:'json',
     beforeSend: function(xhr){
         if(xhr.overrideMimeType) {
@@ -30,7 +30,7 @@ function masonry(){
 function dataPrint(){
     list = '';
     for( var i in pfList ) {
-        list += `<div class="pfbox"><div class="imgbox"><a href="#none"><div><img src="${pfList[i].Image}" onerror="this.src='img/noimg.gif'" alt=""></div></a></div><div class="abox"><a href="#none">${pfList[i].Title}</a></div></div>`
+        list += `<div class="pfbox"><div class="imgbox"><a href="#none"><div><img src="${pfList[i].Image}" onerror="this.src='./img/noimg.gif'" alt=""></div></a></div><div class="abox"><a href="#none">${pfList[i].Title}</a></div></div>`
     }
     $('.section8 .pf_contents').append(list)
     // setTimeout(masonry, 500)

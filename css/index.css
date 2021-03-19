@@ -435,7 +435,7 @@
 
 #section .section8 .pf_contents img { width: 100%; height: auto; }
 #section .section8 .pf_contents a { display: block; }
-#section .section8 .pf_contents .grid-item { width: 25%; padding: 0 10px; }
+#section .section8 .pf_contents .pfbox { width: 25%; padding: 0 10px; }
 #section .section8 .pf_contents .pfbox .imgbox { 
     position: relative; margin: 5px 0; padding: 2px;
 }
